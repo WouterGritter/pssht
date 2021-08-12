@@ -13,7 +13,7 @@ mvn clean compile assembly:single
 2. Install java 11 and maven (`apt install openjdk-11-jre-headless mvn`)
 3. Build the server (`cd pssht && mvn clean compile assembly:single`)
 4. Open crontab `crontab -e`
-5. Insert `@reboot screen -S pssht_server -dm bash -c "cd ~/PSSHT_LOCATION/target/ && java -jar pterodactylAPI-ssh-tunnels-1.0-SNAPSHOT-jar-with-dependencies.jar.jar"`
+5. Insert `@reboot screen -S pssht_server -dm bash -c "cd ~/PSSHT_LOCATION/target/ && java -jar pterodactylAPI-ssh-tunnels-1.0-SNAPSHOT-jar-with-dependencies.jar"`
 6. Reboot
 
 A screen called pssht_server with pssht running inside of it should now be running.
